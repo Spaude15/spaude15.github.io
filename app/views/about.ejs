@@ -1,0 +1,37 @@
+<!--Sudarshan paudel |301319847| October-1|about.ejs|-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/styles.css">\public\styles.css
+</head>
+<body>
+    <header>
+        <!-- Include the header partial -->
+        <%- include("partials/header"); %>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="/images/sudarshanimage.jpg" alt="Sudarshan Paudel">
+            <div class="myinfo">
+                <p>
+               Hello! I'm Sudarshan Paudel, a dedicated Software Engineering Technician student at Centennial College. My journey into the world of technology has been fueled by a deep-rooted passion for software development. 
+                    I'm currently pursuing a degree in Software Engineering Technician, where I'm honing my skills in various facets of software development. This educational journey has provided me with a strong foundation in both front-end and back-end technologies.
+                    My fascination with software development extends beyond the classroom. I'm genuinely enthusiastic about staying updated with the latest advancements in the field. This curiosity drives me to continually explore emerging technologies, frameworks, and programming languages.
+                    Beyond coding, I have a diverse set of interests. I'm an avid nature enthusiast, and you can often find me hiking in the great outdoors, connecting with the beauty of our natural world. Additionally, I'm an ardent coffee lover, and I enjoy sipping on a cup of java while sketching out new project ideas.
+                    My goal is to use my technical expertise to create innovative and impactful solutions, and I'm excited to share my journey with you. Thank you for visiting my portfolio!
+                    </p>
+                <a href="/images/sudarshanresume.pdf" class="button">Download Resume (PDF)</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Include the footer partial -->
+    <%- include("partials/footer"); %>
+</body>
+</html>

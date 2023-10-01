@@ -1,0 +1,51 @@
+<!--Sudarshan paudel |301319847| October-1|contact.ejs|-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    
+    <header>
+        <%- include("partials/header"); %>
+    </header>
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+        <p> Please fill up the form below to reach me out. Desperate to work with you guys!</p>
+        
+        <form action="/contact" method="post" class="styled-form">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Amitabh" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Bachan" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Amitabhbachan@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Contact Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Optional">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message here" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+    
+   
+    <%- include("partials/footer"); %>
+</body>
+</html>
